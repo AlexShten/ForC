@@ -23,19 +23,19 @@ int main(){
 
 	case 1:
 		scanf("%hd", &value1);
-		swap16(&value1, sizeof(value1));
+		swap16((unsigned char *)&value1, sizeof(value1));
 		value = value1;
 		break;
 
 	case 2:
 		scanf("%d", &value2);
-		swap32(&value2, sizeof(value2));
+		swap32((unsigned char *)&value2, sizeof(value2));
 		value = value2;
 		break;
 
 	case 3:
 		scanf("%lu", &value3);
-		swap64(&value3, sizeof(value3));
+		swap64((unsigned char *)&value3, sizeof(value3));
 		value = value3;
 		break;
 	}	
